@@ -43,11 +43,6 @@ class HeroAdapter: ListAdapter<HeroModel.Heroes, HeroAdapter.ViewHolder>(DiffCal
             currentHero = getItem(adapterPosition)
             binding.apply {
                 portrait.setImage(currentHero.urlVerticalPortrait!!)
-                    root.setOnClickListener {
-                        onClick(
-                            currentHero
-                        )
-                    }
             }
 
         }

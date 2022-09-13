@@ -45,11 +45,6 @@ class MainFragment : BaseFragment<FragmentMainBinding>(FragmentMainBinding::infl
         }
     }
 
-    private fun navigate(name:String,portrait:String,fullPortrait:String){
-        adapter.onClick = {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToHeroFragment(name,portrait,fullPortrait))
-        }
-    }
 
     override fun initRecycler() {
         binding?.recycler?.adapter = adapter
